@@ -1,0 +1,27 @@
+@import "../styles.scss";
+
+header {
+    color: $fontColor;
+    min-height: 100px;
+    margin-bottom: 10px;
+}
+
+hr {
+    background: $fontColor;    
+    width: 100%;
+    display: block;    
+    margin: 0;
+    height: 6px;
+}
+
+main {
+    height: auto;
+}
+
+footer {
+    font-size: 1.7rem;
+    margin-top: auto;
+    min-height: 50px;
+    width: 100vw; 
+    background: linear-gradient($mainColor, $mainColor2);
+}
