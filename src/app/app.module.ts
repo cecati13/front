@@ -7,6 +7,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FloatingMenuComponent } from './floating-menu/floating-menu.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { WelcomeYearComponent } from './welcome-year/welcome-year.component';
+import { MainStartComponent } from './main-start/main-start.component';
+import { StartContainerComponent } from './start-container/start-container.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +17,10 @@ import { FooterComponent } from './footer/footer.component';
     NavbarComponent,
     FloatingMenuComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    WelcomeYearComponent,
+    MainStartComponent,
+    StartContainerComponent
   ],
   imports: [
     BrowserModule,

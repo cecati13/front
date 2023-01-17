@@ -1,0 +1,62 @@
+@import "./../../styles.scss";
+
+.welcome {
+    font-size: 4rem;
+    padding: 20px;
+    background: linear-gradient(180deg, #7c888f, transparent);
+    border-radius: 25px;
+    color: $mainColor;
+    -webkit-text-stroke: 2px $fontColor;
+    margin: 10px 0;
+}
+
+.welcome--title {
+    opacity: 1;
+    animation: enfasis 5s ease-in 500ms 1 reverse none;
+}
+
+@keyframes enfasis {
+    0% {
+        transform: scale(0.5);
+        opacity: 1;
+    }
+
+    25% {        
+        opacity: 0.7;
+    }
+
+    50% {
+        transform: scale(1.4);
+        opacity: 1;
+    }
+
+    75% {        
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.welcome--age {
+    padding-top: 25px;
+    font-size: 5.4rem;
+    animation: moverse 5s ease-in 500ms 1 reverse none;
+}
+
+@keyframes moverse {
+    0% {
+        transform: translate(0);
+    }    
+
+    50% {
+        transform: translateY(15px);
+        opacity: 1;
+    }
+
+    100% {
+     transform: translate(0);
+    }
+}
