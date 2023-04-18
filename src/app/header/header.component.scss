@@ -5,7 +5,7 @@
     flex-direction: column;
     align-items: center;    
     min-height: 90px;
-    color: $fontColor;
+    color: var(--fontColor);
     
     a > img {
         margin-top: 25px;

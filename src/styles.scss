@@ -6,6 +6,36 @@ $contrastColor2: #628281;
 $mainColor: #ffffff;
 $mainColor2: #b1bdc5;
 
+// Dark mode
+$fontColorDarkMode: #e3bdc7;
+$fontColor2DarkMode: #BFC1DC;    
+$contrastColorDarkMode: #af9bad;
+$contrastColor2DarkMode: #515e73;
+$mainColorDarkMode: #1d1e1e;
+$mainColor2DarkMode: #353c3f;
+
+@media (prefers-color-scheme: dark){
+    :root {
+        --fontColor: #{$fontColorDarkMode};
+        --fontColor2: #{$fontColor2DarkMode};
+        --contrastColor: #{$contrastColorDarkMode};
+        --contrastColor2: #{$contrastColor2DarkMode};
+        --mainColor: #{$mainColorDarkMode};
+        --mainColor2: #{$mainColor2DarkMode};
+    }
+}
+
+@media (prefers-color-scheme: light){
+    :root {
+        --fontColor: #{$fontColor};
+        --fontColor2: #{$fontColor2};
+        --contrastColor: #{$contrastColor};
+        --contrastColor2: #{$contrastColor2};
+        --mainColor: #{$mainColor};
+        --mainColor2: #{$mainColor2};
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -18,11 +48,11 @@ html {
 }
 
 body {
-    background-color: $mainColor;
+    background-color: var(--mainColor);
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
 }
 
 ul {    
@@ -34,5 +64,9 @@ a {
 }
 
 a, a:visited, a:active{
-    color: $fontColor;
+    color: var(--fontColor);
+}
+
+app-root {
+    min-height: 100vh;
 }

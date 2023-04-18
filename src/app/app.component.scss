@@ -1,13 +1,18 @@
 @import "../styles.scss";
 
+:host {
+    display: block;
+    height: 100%;
+}
+
 header {
-    color: $fontColor;
+    color: var(--fontColor);
     min-height: 100px;
     margin-bottom: 10px;
 }
 
 hr {
-    background: $fontColor;    
+    background: var(--fontColor);   
     width: 100%;
     display: block;    
     margin: 0;
@@ -15,7 +20,7 @@ hr {
 }
 
 main {
-    height: auto;
+    min-height: calc(100vh - 330px);
 }
 
 footer {
@@ -23,5 +28,5 @@ footer {
     margin-top: auto;
     min-height: 50px;
     width: 100vw; 
-    background: linear-gradient($mainColor, $mainColor2);
+    background: linear-gradient(var(--mainColor), var(--mainColor2));
 }

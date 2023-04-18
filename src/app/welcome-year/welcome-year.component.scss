@@ -5,8 +5,8 @@
     padding: 20px;
     background: linear-gradient(180deg, #7c888f, transparent);
     border-radius: 25px;
-    color: $mainColor;
-    -webkit-text-stroke: 2px $fontColor;
+    color: var(--mainColor);
+    -webkit-text-stroke: 2px var(--fontColor);
     margin: 10px 0;
 }
 
